@@ -1,5 +1,5 @@
-- key: github
+- slug: access_token
   en:
-    term: GitHub
+    term: "Access token"
     def: >
-      Write a definition here.
+      A token that is used in place of a password when performing Git operations over HTTPS with Git on the command line or the API. Also called a personal access token.
