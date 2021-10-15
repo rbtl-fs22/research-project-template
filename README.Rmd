@@ -1,0 +1,25 @@
+---
+title: "Research project title"
+author: "Group name"
+output: html_document
+---
+
+# Summary
+
+
+```{r}
+
+```
+
+# Introduction
+
+# Methods
+
+# Results & Discussion
+
+We have used `r glosario::gdef('linear_regression', 'linear regression')` models 
+
+# Conclusions
+
+# References
+
