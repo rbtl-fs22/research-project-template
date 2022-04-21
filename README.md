@@ -1,24 +1,6 @@
-Research project title
-================
-Group name
+# Research Project Report Template
 
-# Summary
-
-<span class="glosario_def">[Linear regression
-models](https://glosario.carpentries.org/en/#linear_regression)</span>
-
-``` r
-glosario::gdef('linear_model', 'Linear models')
-```
-
-    ## <span class="glosario_def">[Linear models](https://glosario.carpentries.org/en/#linear_model)</span>
-
-# Introduction
-
-# Methods
-
-# Results & Discussion
-
-# Conclusions
-
-# References
+- [ ] has bibliography field in the YAML header
+- [ ] has exported .bib file in repo
+- [ ] has .bib file exported from group library in Zotero added as
+    value to bibliography field in YAML header
