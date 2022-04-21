@@ -1,10 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Schöbitz
-    given-names: Lars
-    orcid: https://orcid.org/0000-0003-2196-5015
-title: "My Research Software"
+  - family-names: Add name
+    given-names: Add name
+    orcid: https://orcid.org/0000-0000-0000-0000
+  - family-names: 
+    given-names: 
+    orcid: 
+  - family-names: 
+    given-names: 
+    orcid: 
+title: "Waste Management in Public Spaces in Zurich, Switzerland. A research project student report of students part of the "Research Beyond the Lab" course at ETH Zurich."
 version: 0.0.1
 doi: 
 date-released: YYYY-MM-DD
