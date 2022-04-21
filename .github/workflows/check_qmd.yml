@@ -3,7 +3,7 @@ on:
     branches:
     - main
     paths:
-    - 'hw1.qmd'  
+    - 'research-project-main-report.qmd'  
 name: Check Repo
 jobs:
   check-rmd:
@@ -14,4 +14,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
     - name: Check qmd Rendering
-      run:  Rscript -e "quarto::quarto_render('hw1.Rmd')"
+      run:  Rscript -e "quarto::quarto_render('research-project-main-report.qmd')"
