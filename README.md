@@ -18,24 +18,7 @@ This document describes:
 The repository has the following directory tree.
 
     .
-    ├── 00-main-report.html
     ├── 00-main-report.qmd
-    ├── 00-main-report_files
-    │   └── libs
-    │       ├── bootstrap
-    │       │   ├── bootstrap-icons.css
-    │       │   ├── bootstrap-icons.woff
-    │       │   ├── bootstrap.min.css
-    │       │   └── bootstrap.min.js
-    │       ├── clipboard
-    │       │   └── clipboard.min.js
-    │       └── quarto-html
-    │           ├── anchor.min.js
-    │           ├── popper.min.js
-    │           ├── quarto-syntax-highlighting.css
-    │           ├── quarto.js
-    │           ├── tippy.css
-    │           └── tippy.umd.min.js
     ├── 01-introduction.qmd
     ├── 02-methods.qmd
     ├── 03-01-results.qmd

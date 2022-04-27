@@ -1,0 +1,55 @@
+---
+title: "Main Report"
+format:
+  html:
+    theme: default
+---
+
+# Introduction
+
+```{r}
+#| child: 01-introduction.qmd
+```
+
+# Methods
+
+```{r}
+#| child: 02-methods.qmd
+```
+
+# Results & Discussion
+
+## Part 1
+
+```{r}
+#| child: 03-01-results.qmd
+```
+
+## Part 2
+
+```{r}
+#| child: 03-02-results.qmd
+```
+
+## Part 3
+
+```{r}
+#| child: 03-03-results.qmd
+```
+
+# Conclusions
+
+```{r}
+#| child: 04-conclusions.qmd
+```
+
+# Recommendations
+
+```{r}
+#| child: 05-recommendations.qmd
+```
+
+# References
+
+
+
