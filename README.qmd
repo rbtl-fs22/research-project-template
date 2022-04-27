@@ -1,9 +1,118 @@
 ---
 format: gfm
+execute:
+  echo: false
+  message: false
+  warning: false
+editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
 
-# Research Project Report Template
+# Report template
 
-- [ ] has bibliography field in the YAML header
-- [ ] has exported .bib file in repo
-- [ ] has .bib file exported from group library in Zotero added as value to bibliography field in YAML header
+This repository is the report template for the research project. Each team will have one repo to work on collaboratively using the tools they have learned as part of the course. Each team member will clone a copy of the repo to a remote repository using the workspace for the course on RStudio Cloud.
+
+This document describes:
+
+1.  the Directories & Files of the template repo;
+2.  the detailed Grading information for the report;
+3.  the plans for Publishing elements of the research project.
+
+# Directories & Files
+
+The repository has the following directory tree.
+
+```{r}
+fs::dir_tree()
+```
+
+The following table presents a brief description of each file and directory. The contribution column states how contribution is managed for the individual items.
+
+| name                | description                                                                                                                                                                                                                                                                                                                                                                                                                | contribution                        |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| 00-main-report.qmd  | This is the main report. The report uses code-chunks with 'child documents' to compile the report with all sections.                                                                                                                                                                                                                                                                                                       | All team members. Self coordinated. |
+| 01-introduction.qmd | This is the introduction section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                           | All team members. Self coordinated. |
+| 02-methods.qmd      | This is the methods section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                                | All team members. Self coordinated. |
+| 03-01-results.qmd   | This is one of three results sections for the main report. It contains the core data analysis, including all steps of data import, cleaning, transformation, visualisation and tables. It also includes a discussion of the presented results. One file was created for each team member to provide their own individual contribution to the report. Team members coordinate themselves to decide who works in which file. | Individual team member.             |
+| 03-02-results.qmd   | See above: 03-01-results.qmd                                                                                                                                                                                                                                                                                                                                                                                               | Individual team member.             |
+| 03-03-results.qmd   | See above: 03-01-results.qmd                                                                                                                                                                                                                                                                                                                                                                                               | Individual team member.             |
+| 04-conclusions.qmd  | This is the conclusions section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                            | All team members. Self coordinated. |
+| CITATION.cff        | A citation file in the citation file format (.cff). Names of contributors and their ORCID iD are added to this file.                                                                                                                                                                                                                                                                                                       | All team members. Self coordinated. |
+| CODE_OF_CONDUCT.md  | A code of conduct for this project.                                                                                                                                                                                                                                                                                                                                                                                        | None                                |
+| LICENSE.md          | A license for this project.                                                                                                                                                                                                                                                                                                                                                                                                | None                                |
+| README.md           | A README.md file compiled from README.qmd with format gfm (GitHub Flavoured Markdown)                                                                                                                                                                                                                                                                                                                                      | None                                |
+| README.qmd          | A README.qmd file to write up general information about this project.                                                                                                                                                                                                                                                                                                                                                      | None                                |
+| data                | A data directory with sub-directories. Each individual directory contains a README.md with general information about its content. Open the individual README files to access the information.                                                                                                                                                                                                                              | All team members. Self coordinated. |
+
+# Grading
+
+```{r}
+grading <- googlesheets4::read_sheet("1l4rffWN2dSv-q_avSzYCUoFeExl8ben2JenNHHE-HN8")
+
+```
+
+The project report is graded in two categories (intellectual and technical) and contributes a total of 30 points to the final grade (see following table).
+
+```{r}
+#| label: tbl-grading-overview
+#| tbl-cap: "Overall grading structure of the rbtl course. Refer to the [syllabus](https://rbtl-fs22.github.io/website/syllabus.html#grading) for the complete grading scheme. "
+
+library(tidyverse)
+
+grading %>% 
+  filter(type == "project") %>% 
+  group_by(type, category, description) %>% 
+  summarise(
+    points = sum(points)
+  ) %>% 
+  knitr::kable()
+
+```
+
+## Graded items
+
+```{r}
+grading_items <- grading %>% 
+  filter(type == "project") %>% 
+  group_by(grading) %>% 
+  summarise(points = sum(points)) 
+
+grading_individual <- grading_items %>% 
+  filter(grading == "individual") %>% 
+  pull(points)
+
+grading_team <- grading_items %>% 
+  filter(grading == "team") %>% 
+  pull(points)
+
+```
+
+The following table is a detailed list of items for grading of the research project report are presented. Some items are graded for the team, while items related to the "Results & Discussion" sections of the report are graded for each individual team member. Individual items make up `r grading_individual` points and team items make up `r grading_team` of the total points for the research project report.
+
+```{r}
+#| label: tbl-grading-items
+#| tbl-cap: "List of items and points for grading of the research project report. The grading column identifies if the item is graded for the team or the individual team member."
+
+grading %>% 
+  filter(type == "project") %>% 
+  select(items, points, grading) %>% 
+  knitr::kable()
+
+```
+
+# Publishing
+
+The goal is to publish all elements of the research reports after students have received their final grades (including the exam) and the data and results were shared and presented to Stadt Zürich, Entsorgung and Recycling (ERZ) team.
+
+## Data
+
+The tidy data from all students projects will be compiled in one central data repository and published for long-term archiving using Zenodo publishing service to generate a Digital Object Identifier (DOI). This in return will be added to the CITATION.CFF file contained in `research-project-template`. Together with the a persistent digital identifier (an ORCID iD) credit is attributed to all contributors.
+
+## Scientific journals
+
+The course coordinators are planning to publish in scientific journals. This could be a journal related to Waste Management where actual data and results are used. This could also be a journal related to the educational format of this course. Independent of where course coordinators decide to publish, the goal is to add all contributors as co-authors to the manuscript. If that is not possible, at the least, all contributors will be added with their individual contributions to research design, data collection, and analysis using the [CRediT (Contributor Roles Taxonomy)](https://casrai.org/credit/).
+
+## Student' portfolios
+
+If all team members of each group agree, then the repository for the research project report can be forked by individual team members to their personal GitHub Account, made public and published using GitHub Pages or another free service (e.g. Netlify). Doing this will help students build a portfolio on GitHub and showcase the work they have done as part of the course.
