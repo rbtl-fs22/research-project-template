@@ -18,13 +18,31 @@ This document describes:
 The repository has the following directory tree.
 
     .
+    ├── 00-main-report.html
     ├── 00-main-report.qmd
+    ├── 00-main-report_files
+    │   └── libs
+    │       ├── bootstrap
+    │       │   ├── bootstrap-icons.css
+    │       │   ├── bootstrap-icons.woff
+    │       │   ├── bootstrap.min.css
+    │       │   └── bootstrap.min.js
+    │       ├── clipboard
+    │       │   └── clipboard.min.js
+    │       └── quarto-html
+    │           ├── anchor.min.js
+    │           ├── popper.min.js
+    │           ├── quarto-syntax-highlighting.css
+    │           ├── quarto.js
+    │           ├── tippy.css
+    │           └── tippy.umd.min.js
     ├── 01-introduction.qmd
     ├── 02-methods.qmd
     ├── 03-01-results.qmd
     ├── 03-02-results.qmd
     ├── 03-03-results.qmd
     ├── 04-conclusions.qmd
+    ├── 05-recommendations.qmd
     ├── CITATION.cff
     ├── CODE_OF_CONDUCT.md
     ├── LICENSE.md
@@ -54,6 +72,7 @@ for the individual items.
 | 03-02-results.qmd   | See above: 03-01-results.qmd                                                                                                                                                                                                                                                                                                                                                                                               | Individual team member.             |
 | 03-03-results.qmd   | See above: 03-01-results.qmd                                                                                                                                                                                                                                                                                                                                                                                               | Individual team member.             |
 | 04-conclusions.qmd  | This is the conclusions section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                            | All team members. Self coordinated. |
+| 05-recommendations. | This is the recommendations section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                        | All team members. Self coordinated. |
 | CITATION.cff        | A citation file in the citation file format (.cff). Names of contributors and their ORCID iD are added to this file.                                                                                                                                                                                                                                                                                                       | All team members. Self coordinated. |
 | CODE_OF_CONDUCT.md  | A code of conduct for this project.                                                                                                                                                                                                                                                                                                                                                                                        | None                                |
 | LICENSE.md          | A license for this project.                                                                                                                                                                                                                                                                                                                                                                                                | None                                |
