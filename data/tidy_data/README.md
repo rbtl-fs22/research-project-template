@@ -23,5 +23,4 @@ A template CSV file for attributes of datasets is contained in the `/metadata` f
 | description  | a written description of what that measured variable is |
 | unitText     | the units the variable was measured in                  |
 
-The data will be published for long-term archiving using Zenodo publishing service to generate a Digital Object Identifier (DOI). This in return will be added to the CITATION.CFF file contained in `~/research-project-template/`. Together with the a persistent digital identifier (an ORCID iD) credit is attributed to all contributors. 
 
