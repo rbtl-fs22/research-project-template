@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # mac files
 .DS_Store
+
+# solutions
+*-solutions.R
