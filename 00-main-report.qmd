@@ -5,7 +5,13 @@ format:
     theme: default
 ---
 
+# Summary {.unnumbered}
+
+<!--# Write a summary of your research project of no more than 250 words. In a few sentences, explain (a) what the problem is you are solving, (b) why someone should care, (c) how you designed your research to address it, (d) what the results are.-->
+
 # Introduction
+
+<!--# Use the 01-introduction.qmd file to write up this section. Write an introduction that uses 3 to 5 references to frame the research question. -->
 
 ```{r}
 #| child: 01-introduction.qmd
@@ -13,11 +19,15 @@ format:
 
 # Methods
 
+<!--# Use the 02-methods.qmd file to write up this section. Document your research design in a way that somebody else could replicate your study. You do not need to write up the software packages you have used or any other technical detail. Include any modifications you have had to make while undertaking your data collection. -->s
+
 ```{r}
 #| child: 02-methods.qmd
 ```
 
 # Results & Discussion
+
+<!--# This is the core part of the report. Each group member has an allocated document to write up their results from the data analysis. Decide yourself who is using which of the three documents. -->
 
 ## Part 1
 
@@ -39,17 +49,23 @@ format:
 
 # Conclusions
 
+<!--# Summarise your findings in three to five bullet points. -->
+
 ```{r}
 #| child: 04-conclusions.qmd
 ```
 
 # Recommendations
 
+<!--# Add recommendations that the city can follow. Draw these from the successes and challenges you encountered; What should the city do / What should the city not do? -->
+
 ```{r}
 #| child: 05-recommendations.qmd
 ```
 
 # References
+
+<!--# The references you have used in the report will be listed here automatically. -->
 
 
 
