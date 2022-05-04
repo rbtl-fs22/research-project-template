@@ -1,0 +1,10 @@
+id,link,questions,answered,gh
+1,https://github.com/rbtl-fs22/research-project-template-bananas-in-pyjamas/issues/3,What are the steps for publishing a paper?,no,sebastian-loos
+2,https://github.com/rbtl-fs22/research-project-template-bananas-in-pyjamas/issues/3,Why are “base project” files not added in Rstudio My Workspace,no,sebastian-loos
+3,https://github.com/rbtl-fs22/research-project-template-bananas-in-pyjamas/issues/3,How to give credit for repo template?,no,sebastian-loos
+4,https://github.com/rbtl-fs22/research-project-template-bananas-in-pyjamas/issues/1,When is the deadline for the report?,yes,bdmnali
+5,https://github.com/rbtl-fs22/research-project-template-bananas-in-pyjamas/issues/1,Do we need an Orchi iD ourselves?,yes,bdmnali
+6,https://github.com/rbtl-fs22/research-project-template-disposa-liz/issues/4,what does happen if two team-member modify the same file make a commit and push it back to git in parallel? Does the one pushing back the last overwrite the first one?,yes,oda-vigen
+7,https://github.com/rbtl-fs22/research-project-template-disposa-liz/issues/4,"And what if I modify without commit something in a file and then pull, are the modification overwritten by the git version?",yes,oda-vigen
+,https://github.com/rbtl-fs22/research-project-template-disposa-liz/issues/6#issuecomment-1117381224,"The DOI that Zenodo publishing service generates, is it similar to what is generated when the paper is accepted by a journal?",yes,salonivijay
+,https://github.com/rbtl-fs22/research-project-template-disposa-liz/issues/6#issuecomment-1117381224,What is the difference when contributors are added as co-authors to the manuscript and when they are added using the CRediT?,yes,salonivijay
