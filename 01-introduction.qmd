@@ -2,6 +2,3 @@
 format: html
 editor: visual
 ---
-## Waste Management in Zurich
-
-                 ERZ manages around 5000 public bins in Zurich (ref).
