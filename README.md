@@ -1,4 +1,3 @@
-
 # Report template
 
 This repository is the report template for the research project. Each
@@ -33,8 +32,10 @@ The repository has the following directory tree.
     ├── README.qmd
     ├── data
     │   ├── README.md
+    │   ├── derived_data
     │   ├── raw_data
-    │   │   └── README.md
+    │   │   ├── README.md
+    │   │   └── am-10-questions.csv
     │   └── tidy_data
     │       ├── README.md
     │       └── metadata
@@ -86,23 +87,23 @@ report are graded for each individual team member. Individual items make
 up 13 points and team items make up 17 of the total points for the
 research project report.
 
-| items                                                                                                                                                                                                                                                                                 | points | grading    |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------:|:-----------|
-| YAML header of main report has title, authors, table of contents that are correctly displayed in the compiled output.                                                                                                                                                                 |      1 | team       |
-| Each results sections has at least two data visualisations.                                                                                                                                                                                                                           |      1 | individual |
-| Data visualisations display at least two variables and are readible in a standalone format with edited labels (axis labels, title, legend title). At least one scaling function is applied (e.g. color/fill, axis). A theme is applied. Each visualisation has a label and a caption. |      5 | individual |
-| The report includes a table with summary statistics (e.g. mean, median, sd). The table is formatted using a function taught during the course.                                                                                                                                        |      1 | individual |
-| The two data visualisations and the table are cross-referenced in the results sections of the report.                                                                                                                                                                                 |      1 | individual |
-| Messages and warnings are hidden from the compiled output, but code is shown in the compiled output.                                                                                                                                                                                  |      1 | team       |
-| A bibliography with references was exported from the team folder in the Zotero Group rbtl. The bibliography is uploaded to the main directory of the repository and added to the YAML header of the main report file. References are used throughout the report.                      |      1 | team       |
-| The results sections of the report contain at least two locations where inline code is used to show single number results.                                                                                                                                                            |      1 | individual |
-| Metadata for data contained in the ‘data/tidy_data/’ directory is added using the provided README and CSV file templates.                                                                                                                                                             |      2 | team       |
-| Contributor details for all team members are added to the CITATION.cff file.                                                                                                                                                                                                          |      1 | team       |
-| Introduction with 3 to 5 references clearly frames the research question and provides justification for the work.                                                                                                                                                                     |      2 | team       |
-| Methods are clearly documented and replicable.                                                                                                                                                                                                                                        |      2 | team       |
-| Meaning of results are interpreted; how each Figure/Table contributes to answering the main Research Question is explained; Limitations of the data are honest and discussed.                                                                                                         |      4 | individual |
-| Conclusions concisely summarize findings in a bullet point format.                                                                                                                                                                                                                    |      3 | team       |
-| Recommendations for future work are provided.                                                                                                                                                                                                                                         |      4 | team       |
+| items                                                                                                                                                                                                                                                                                 | points | grading    | checkbox |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------:|:-----------|:---------|
+| YAML header of main report has title, authors, table of contents that are correctly displayed in the compiled output.                                                                                                                                                                 |      1 | team       | \[ \]    |
+| Each results sections has at least two data visualisations.                                                                                                                                                                                                                           |      1 | individual | NA       |
+| Data visualisations display at least two variables and are readible in a standalone format with edited labels (axis labels, title, legend title). At least one scaling function is applied (e.g. color/fill, axis). A theme is applied. Each visualisation has a label and a caption. |      5 | individual | NA       |
+| The report includes a table with summary statistics (e.g. mean, median, sd). The table is formatted using a function taught during the course.                                                                                                                                        |      1 | individual | NA       |
+| The two data visualisations and the table are cross-referenced in the results sections of the report.                                                                                                                                                                                 |      1 | individual | NA       |
+| Messages and warnings are hidden from the compiled output, but code is shown in the compiled output.                                                                                                                                                                                  |      1 | team       | NA       |
+| A bibliography with references was exported from the team folder in the Zotero Group rbtl. The bibliography is uploaded to the main directory of the repository and added to the YAML header of the main report file. References are used throughout the report.                      |      1 | team       | NA       |
+| The results sections of the report contain at least two locations where inline code is used to show single number results.                                                                                                                                                            |      1 | individual | NA       |
+| Metadata for data contained in the ‘data/tidy_data/’ directory is added using the provided README and CSV file templates.                                                                                                                                                             |      2 | team       | NA       |
+| Contributor details for all team members are added to the CITATION.cff file.                                                                                                                                                                                                          |      1 | team       | NA       |
+| Introduction with 3 to 5 references clearly frames the research question and provides justification for the work.                                                                                                                                                                     |      2 | team       | NA       |
+| Methods are clearly documented and replicable.                                                                                                                                                                                                                                        |      2 | team       | NA       |
+| Meaning of results are interpreted; how each Figure/Table contributes to answering the main Research Question is explained; Limitations of the data are honest and discussed.                                                                                                         |      4 | individual | NA       |
+| Conclusions concisely summarize findings in a bullet point format.                                                                                                                                                                                                                    |      3 | team       | NA       |
+| Recommendations for future work are provided.                                                                                                                                                                                                                                         |      4 | team       | NA       |
 
 # Publishing
 

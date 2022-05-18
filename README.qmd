@@ -30,7 +30,7 @@ fs::dir_tree()
 The following table presents a brief description of each file and directory. The contribution column states how contribution is managed for the individual items.
 
 | name                | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | contribution                        |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+|----------|-----------------------------------------------------|----------|
 | 00-main-report.qmd  | This is the main report. The report uses code-chunks with 'child documents' to compile the report with all sections.                                                                                                                                                                                                                                                                                                                                                          | All team members. Self coordinated. |
 | 01-introduction.qmd | This is the introduction section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                                                                              | All team members. Self coordinated. |
 | 02-methods.qmd      | This is the methods section for the main report. Comments inside the document provide guidance for content.                                                                                                                                                                                                                                                                                                                                                                   | All team members. Self coordinated. |
@@ -98,7 +98,7 @@ The following table is a detailed list of items for grading of the research proj
 
 grading %>% 
   filter(type == "project") %>% 
-  select(items, points, grading) %>% 
+  select(items, points, grading, checkbox) %>% 
   knitr::kable()
 
 ```
