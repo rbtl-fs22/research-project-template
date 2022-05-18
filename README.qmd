@@ -98,7 +98,7 @@ The following table is a detailed list of items for grading of the research proj
 
 grading %>% 
   filter(type == "project") %>% 
-  select(items, points, grading, checkbox) %>% 
+  select(items, points, grading) %>% 
   knitr::kable()
 
 ```
